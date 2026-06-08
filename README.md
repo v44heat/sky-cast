@@ -1,0 +1,125 @@
+# SkyCast 🌤️
+
+> **Weather Anywhere, Instantly.**
+
+A modern, production-ready weather dashboard built with React, TypeScript, Vite, Tailwind CSS, and the OpenWeatherMap API.
+
+---
+
+## ✨ Features
+
+- **Current Weather** — Temperature, condition, feels-like, humidity, wind, pressure, visibility, cloud cover
+- **Hourly Forecast** — Next 24-hour breakdown with precipitation probability
+- **5-Day Forecast** — Daily min/max temperature range bars with weather icons
+- **Air Quality** — AQI index with full pollutant breakdown (PM2.5, PM10, O₃, NO₂, SO₂, CO)
+- **Sun Info** — Sunrise, sunset, day length with visual progress arc
+- **Weather Charts** — Temperature, humidity, wind speed, and precipitation trends (Recharts)
+- **Geolocation** — "Use My Location" button with reverse geocoding
+- **City Search** — Autocomplete via OpenWeather Geocoding API + debounced input
+- **Recent Searches** — LocalStorage persisted, clearable
+- **Favorites** — Save cities with one click, quick-access from any page
+- **Dark Mode** — Fully themed glassmorphism UI, persisted across sessions
+- **Unit Settings** — °C/°F temperature, km/h/mph wind speed
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | React 18 + TypeScript |
+| Build Tool | Vite |
+| Styling | Tailwind CSS v4 |
+| Data Fetching | TanStack Query (React Query) |
+| Routing | React Router v6 |
+| Charts | Recharts |
+| Icons | Lucide React |
+| HTTP | Axios |
+| Dates | date-fns |
+| Deployment | Vercel |
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+├── components/         # Reusable UI components
+├── context/            # React context providers (Theme, Settings, Weather)
+├── hooks/              # Custom hooks (useWeather, useFavorites, useGeolocation)
+├── layouts/            # Page shell (Navbar + Outlet)
+├── pages/              # Route pages (Home, Charts, Favorites, Settings)
+├── services/           # API service layer (weatherApi.ts)
+├── types/              # Full TypeScript type definitions
+└── utils/              # Helper functions (formatTemp, formatTime, etc.)
+```
+
+---
+
+## 🚀 Quick Start
+
+### 1. Get an API Key
+
+Sign up free at [openweathermap.org](https://openweathermap.org/api) → API Keys tab.
+
+### 2. Install & Run
+
+```bash
+git clone https://github.com/your-username/skycast.git
+cd skycast
+npm install
+
+# Create environment file
+cp .env.example .env
+# Edit .env: add your VITE_OPENWEATHER_API_KEY
+
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173)
+
+### 3. Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 🌐 Environment Variables
+
+```env
+# .env
+VITE_OPENWEATHER_API_KEY=your_key_here
+```
+
+The free OpenWeatherMap plan covers all APIs used:
+- Current Weather (`/data/2.5/weather`)
+- 5-Day Forecast (`/data/2.5/forecast`)
+- Air Pollution (`/data/2.5/air_pollution`)
+- Geocoding (`/geo/1.0/direct` + `/geo/1.0/reverse`)
+
+---
+
+## ☁️ Deploy to Vercel
+
+1. Push to GitHub
+2. Import project at [vercel.com](https://vercel.com)
+3. Add env variable: `VITE_OPENWEATHER_API_KEY`
+4. Click Deploy ✅
+
+---
+
+## 🎨 Design
+
+- **Fonts:** DM Sans + DM Serif Display
+- **Light:** White / Sky Blue / Gray
+- **Dark:** Navy (#0a0f1e) + Sky Blue accents
+- **UI:** Glassmorphism cards, backdrop blur, staggered fade-in animations
+
+---
+
+## 📄 License
+
+MIT
