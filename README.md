@@ -102,24 +102,10 @@ The free OpenWeatherMap plan covers all APIs used:
 
 ---
 
-## ☁️ Deploy to Vercel
-
-1. Push to GitHub
-2. Import project at [vercel.com](https://vercel.com)
-3. Add env variable: `VITE_OPENWEATHER_API_KEY`
-4. Click Deploy ✅
-
----
-
-## 🎨 Design
-
-- **Fonts:** DM Sans + DM Serif Display
-- **Light:** White / Sky Blue / Gray
-- **Dark:** Navy (#0a0f1e) + Sky Blue accents
-- **UI:** Glassmorphism cards, backdrop blur, staggered fade-in animations
-
----
 
 ## 📄 License
 
 MIT
+
+
+Build with ❤️ by v44heat
