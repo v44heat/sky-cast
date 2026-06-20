@@ -94,13 +94,6 @@ npm run preview
 VITE_OPENWEATHER_API_KEY=your_key_here
 ```
 
-The free OpenWeatherMap plan covers all APIs used:
-- Current Weather (`/data/2.5/weather`)
-- 5-Day Forecast (`/data/2.5/forecast`)
-- Air Pollution (`/data/2.5/air_pollution`)
-- Geocoding (`/geo/1.0/direct` + `/geo/1.0/reverse`)
-
----
 
 
 ## 📄 License
