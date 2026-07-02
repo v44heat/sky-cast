@@ -40,20 +40,6 @@ A modern, production-ready weather dashboard built with React, TypeScript, Vite,
 
 ---
 
-## 📁 Folder Structure
-
-```
-src/
-├── components/         # Reusable UI components
-├── context/            # React context providers (Theme, Settings, Weather)
-├── hooks/              # Custom hooks (useWeather, useFavorites, useGeolocation)
-├── layouts/            # Page shell (Navbar + Outlet)
-├── pages/              # Route pages (Home, Charts, Favorites, Settings)
-├── services/           # API service layer (weatherApi.ts)
-├── types/              # Full TypeScript type definitions
-└── utils/              # Helper functions (formatTemp, formatTime, etc.)
-```
-
 ---
 
 ## 🚀 Quick Start
